@@ -17,6 +17,9 @@ li {
 
 ul {
   list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 th, td {
@@ -75,7 +78,9 @@ th, td {
 
 .container {
   display: flex;
+  gap: 20px;
   justify-content: center;
+  text-align: left;
 }
 
 .info-grid {
@@ -199,6 +204,15 @@ th, td {
 
 .reference {
   grid-area: Reference;
+}
+
+.coding-e {
+  border-radius: 25px;
+  background-color: lightblue;
+  border-width: 10px;
+  padding: 20px;
+  flex-shrink: 0;
+  min-width: 200px;
 }
 
 #profile-portrait {
