@@ -59,3 +59,8 @@ th, td {
 .navigation > li {
   padding: 0px;
 }
+
+.segment {
+  margin-bottom: 82px;
+  height: 1px;
+}
