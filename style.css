@@ -9,6 +9,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 li {
@@ -117,7 +118,7 @@ table {
           "Github-l Github Reference-l Reference Reference"
           "Linkedin-l Linkedin Seper5 Seper5 Seper5";
 
-  grid-template-columns: 100px 275px 150px auto auto;
+  grid-template-columns: 100px 265px 150px auto auto;
   grid-template-rows: 40px 40px 20px 40px 20px 40px 40px 40px 60px;
   grid-gap: 10px;
   text-align: left;
@@ -130,6 +131,10 @@ table {
   background: rgb(255,127,80);
   background: linear-gradient(to right, #00b5c0 38%, #00d9dd 38%, #00d9dd 100%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.info-grid > div {
+  padding: 0px 18px;
 }
 
 /* Maps the sections of the grid to the divs */
@@ -232,6 +237,11 @@ table {
   height: 100px;
 }
 
+.clickable-svg {
+  width: auto;
+  height: 18px;
+}
+
 .coding-e {
   border-radius: 25px;
   background-color: lightblue;
@@ -241,9 +251,24 @@ table {
   min-width: 200px;
 }
 
+#hello-message {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
 #profile-portrait {
+  border-radius: 50%;
   width: auto;
   height: 100%;
+}
+
+#header-portrait {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .web, .database, .general, .ide {
