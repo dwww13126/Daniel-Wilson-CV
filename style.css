@@ -377,6 +377,16 @@ table {
   padding: 8px;
 }
 
+.active {
+  color: black;
+  transition: 0.5s;
+}
+
+.nonactive {
+  color: darkslategrey;
+  padding: 0px 0px;
+}
+
 #profile-portrait {
   border-radius: 50%;
   width: auto;
