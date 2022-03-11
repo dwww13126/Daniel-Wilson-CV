@@ -34,6 +34,19 @@ th, td {
   text-align: left;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.fade-in-1 {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+  opacity:1;
+}
+
 table {
   width: 1024px;
   margin: 0px auto;
