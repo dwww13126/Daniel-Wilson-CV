@@ -24,6 +24,8 @@ ul {
 
 th, td {
   padding: 6px;
+  color: black;
+  text-align: left;
 }
 
 .header,
@@ -80,7 +82,6 @@ th, td {
   display: flex;
   gap: 20px;
   justify-content: center;
-  text-align: left;
 }
 
 .info-grid {
@@ -204,6 +205,11 @@ th, td {
 
 .reference {
   grid-area: Reference;
+}
+
+.medium-img {
+  width: 100px;
+  height: 100px;
 }
 
 .coding-e {
