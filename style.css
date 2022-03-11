@@ -28,6 +28,19 @@ th, td {
   text-align: left;
 }
 
+table {
+  width: 1024px;
+  margin: 0px auto;
+  font-size: 20px;
+  border-collapse: separate;
+  border-radius:25px;
+  background-color: #d8f9f8;
+}
+
+.row-separator {
+  background-color: gray;
+}
+
 .header,
 .footer {
   display: flex;
