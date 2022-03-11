@@ -72,3 +72,136 @@ th, td {
   max-width: 1024px;
   margin: 0 auto;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-grid {
+  display: grid;
+  /* Generates a grid with 6 columns and 7 rows */
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  /* Sets up the template for fitting the "Profile:" info */
+  grid-template-areas:
+          "Name Name Position-l Position Position"
+          "Photo Photo Seper1 Seper1 Seper1"
+          "Photo Photo Qual-l Qual1 Qual1"
+          "Photo Photo Seper2 Qual2 Qual2"
+          "Photo Photo Trav-l Trav1 Trav1"
+          "Email-l Email Seper3 Trav2 Trav2"
+          "Phone-l Phone Seper4 Seper4 Seper4"
+          "Github-l Github Reference-l Reference Reference"
+          "Linkedin-l Linkedin Seper5 Seper5 Seper5";
+
+  grid-template-columns: 100px 260px 150px auto auto;
+  grid-template-rows: 40px 40px 20px 40px 20px 40px 40px 40px 60px;
+  grid-gap: 10px;
+  text-align: left;
+  font-size: 20px;
+  width: 1024px;
+  min-width: 1024px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Maps the sections of the grid to the divs */
+
+.photo {
+  grid-area: Photo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+}
+.name {
+  grid-area: Name;
+  display: flex;
+  justify-content: center;
+}
+
+.position-l {
+  grid-area: Position-l;
+}
+
+.position {
+  grid-area: Position;
+}
+
+.github-l {
+  grid-area: Github-l;
+}
+
+.github {
+  grid-area: Github;
+}
+
+.qual-l {
+  grid-area: Qual-l;
+}
+
+.qual1 {
+  grid-area: Qual1;
+}
+
+.qual2 {
+  grid-area: Qual2;
+}
+
+.email-l {
+  grid-area: Email-l;
+}
+
+.email {
+  grid-area: Email;
+}
+
+.linkedin-l {
+  grid-area: Linkedin-l;
+}
+
+.linkedin {
+  grid-area: Linkedin;
+}
+
+.birth-l {
+  grid-area: Birth-l;
+}
+
+.birth {
+  grid-area: Birth;
+}
+
+.license-l {
+  grid-area: Trav-l;
+}
+
+.license1 {
+  grid-area: Trav1;
+}
+
+.license2 {
+  grid-area: Trav2;
+}
+
+.phone-l {
+  grid-area: Phone-l;
+}
+
+.phone {
+  grid-area: Phone;
+}
+
+.reference-l {
+  grid-area: Reference-l;
+}
+
+.reference {
+  grid-area: Reference;
+}
+
+#profile-portrait {
+  width: auto;
+  height: 100%;
+}
