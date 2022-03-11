@@ -149,6 +149,78 @@ table {
   100% {opacity:1;}
 }
 
+.slideIn-1 {
+  animation: slideIn 1s;
+  -webkit-animation: slideIn 1s;
+  -moz-animation: slideIn 1s;
+  -o-animation: slideIn 1s;
+  -ms-animation: slideIn 1s;
+  margin-left: 0px;
+}
+
+
+@keyframes slideIn {
+  0% {margin-left: -220px;}
+  100% {margin-left: 0px;}
+}
+
+@-moz-keyframes slideIn {
+  0% {margin-left: -220px;}
+  100% {margin-left: 0px;}
+}
+
+@-webkit-keyframes slideIn {
+  0% {margin-left: -220px;}
+  100% {margin-left: 0px;}
+}
+
+@-o-keyframes slideIn {
+  0% {margin-left: -220px;}
+  100% {margin-left: 0px;}
+}
+
+#name-p1 {
+  color: black;
+}
+
+#name-p2 {
+  color: Azure;
+}
+
+.name-animation-2 {
+  animation: slideInMove 2s;
+  -webkit-animation: slideInMove 2s;
+  -moz-animation: slideInMove 2s;
+  -o-animation: slideInMove 2s;
+  -ms-animation: slideInMove 2s;
+  margin-left: 10px;
+  opacity: 1;
+}
+
+@keyframes slideInMove {
+  0% {margin-left: 0px; opacity: 0;}
+  40% {margin-left: 0px; opacity: 0;}
+  100% {margin-left: 10px; opacity: 1;}
+}
+
+@-moz-keyframes slideInMove {
+  0% {margin-left: 0px; opacity: 0;}
+  40% {margin-left: 0px; opacity: 0;}
+  100% {margin-left: 10px; opacity: 1;}
+}
+
+@-webkit-keyframes slideInMove {
+  0% {margin-left: 0px; opacity: 0;}
+  40% {margin-left: 0px; opacity: 0;}
+  100% {margin-left: 10px; opacity: 1;}
+}
+
+@-o-keyframes slideInMove {
+  0% {margin-left: 0px; opacity: 0;}
+  40% {margin-left: 0px; opacity: 0;}
+  100% {margin-left: 10px; opacity: 1;}
+}
+
 .info-grid {
   display: grid;
   /* Generates a grid with 6 columns and 7 rows */
