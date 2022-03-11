@@ -22,3 +22,40 @@ ul {
 th, td {
   padding: 6px;
 }
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  background: #3C91E6;
+}
+
+.header {
+  position: fixed;
+  z-index:1;
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  top: 0;
+  font-family: 'Courier New', monospace;
+}
+
+.footer {
+  margin-top: 16px;
+  bottom: 0;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  gap: 16px;
+}
+
+
+.navigation > li {
+  padding: 0px;
+}
