@@ -35,6 +35,7 @@ table {
   border-collapse: separate;
   border-radius:25px;
   background-color: #d8f9f8;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .row-separator {
@@ -49,6 +50,8 @@ table {
   right: 0;
   padding: 8px;
   background: #3C91E6;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .header {
@@ -126,6 +129,7 @@ table {
   padding: 0px;
   background: rgb(255,127,80);
   background: linear-gradient(to right, #00b5c0 38%, #00d9dd 38%, #00d9dd 100%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* Maps the sections of the grid to the divs */
@@ -241,6 +245,10 @@ table {
   width: auto;
   height: 100%;
 }
+
+.web, .database, .general, .ide {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
 
 .web {
   background: rgb(0,255,255);
