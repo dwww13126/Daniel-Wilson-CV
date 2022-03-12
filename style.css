@@ -34,19 +34,6 @@ th, td {
   padding: 6px;
 }
 
-.hidden {
-  opacity: 0;
-}
-
-.fade-in {
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
-  opacity:1;
-}
-
 table {
   width: 1024px;
   font-size: 20px;
@@ -55,10 +42,6 @@ table {
   margin: 0px auto;
   background: #d8f9f8;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.row-separator {
-  background: gray;
 }
 
 .header,
@@ -98,9 +81,17 @@ table {
   padding: 0px;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 .segment {
   height: 1px;
   margin-bottom: 70px;
+}
+
+.row-separator {
+  background: gray;
 }
 
 .text-box {
@@ -125,6 +116,15 @@ table {
   -moz-animation: fadeIn 2s;
   -o-animation: fadeIn 2s;
   -ms-animation: fadeIn 2s;
+}
+
+.fade-in {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+  opacity:1;
 }
 
 /* A number of different keyframes declarations for different browser types */
@@ -177,14 +177,6 @@ table {
 @-o-keyframes slideIn {
   0% {margin-left: -220px;}
   100% {margin-left: 0px;}
-}
-
-#name-p1 {
-  color: black;
-}
-
-#name-p2 {
-  color: Azure;
 }
 
 .name-animation {
@@ -254,7 +246,7 @@ table {
 }
 
 .info-grid > div {
-  padding: 0px 18px;
+  padding: 0pt 0pt 0pt 8pt;
 }
 
 /* Maps the sections of the grid to the divs */
@@ -427,4 +419,12 @@ table {
   height: 50px;
   margin-right: 8px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#name-p1 {
+  color: black;
+}
+
+#name-p2 {
+  color: Azure;
 }
