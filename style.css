@@ -5,11 +5,11 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: black;
   text-align: center;
   margin: 0px;
   padding: 0px;
-  background-color: white;
-  color: black;
 }
 
 a {
@@ -29,16 +29,16 @@ ul {
 }
 
 th, td {
-  padding: 6px;
   color: black;
   text-align: left;
+  padding: 6px;
 }
 
 .hidden {
   opacity: 0;
 }
 
-.fade-in-1 {
+.fade-in {
   animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
   -moz-animation: fadeIn 2s;
@@ -49,16 +49,16 @@ th, td {
 
 table {
   width: 1024px;
-  margin: 0px auto;
   font-size: 20px;
   border-collapse: separate;
-  border-radius:25px;
-  background-color: #d8f9f8;
+  border-radius: 25px;
+  margin: 0px auto;
+  background: #d8f9f8;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .row-separator {
-  background-color: gray;
+  background: gray;
 }
 
 .header,
@@ -72,21 +72,21 @@ table {
 }
 
 .header {
+  font-family: 'Courier New', monospace;
+  font-size: 26px;
   position: fixed;
   z-index:1;
-  font-size: 26px;
   display: flex;
   justify-content: space-between;
-  padding: 0 16px;
   top: 0;
-  font-family: 'Courier New', monospace;
+  padding: 0 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .footer {
-  margin-top: 16px;
   bottom: 0;
   justify-content: center;
+  margin-top: 16px;
 }
 
 .navigation {
@@ -99,8 +99,8 @@ table {
 }
 
 .segment {
-  margin-bottom: 70px;
   height: 1px;
+  margin-bottom: 70px;
 }
 
 .text-box {
@@ -149,7 +149,7 @@ table {
   100% {opacity:1;}
 }
 
-.slideIn-1 {
+.slide-in {
   animation: slideIn 1s;
   -webkit-animation: slideIn 1s;
   -moz-animation: slideIn 1s;
@@ -187,7 +187,7 @@ table {
   color: Azure;
 }
 
-.name-animation-2 {
+.name-animation {
   animation: slideInMove 2s;
   -webkit-animation: slideInMove 2s;
   -moz-animation: slideInMove 2s;
@@ -364,17 +364,11 @@ table {
 
 .coding-e {
   border-radius: 25px;
-  background-color: lightblue;
+  background: lightblue;
   border-width: 10px;
   padding: 20px;
   flex-shrink: 0;
   min-width: 200px;
-}
-
-#hello-message {
-  display: flex;
-  align-items: center;
-  padding: 8px;
 }
 
 .active {
@@ -385,20 +379,6 @@ table {
 .nonactive {
   color: darkslategrey;
   padding: 0px 0px;
-}
-
-#profile-portrait {
-  border-radius: 50%;
-  width: auto;
-  height: 100%;
-}
-
-#header-portrait {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-right: 8px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .awards {
@@ -427,4 +407,24 @@ table {
 .ide {
   background: rgb(0,225,151);
   background: linear-gradient(0deg, rgba(0,225,151,1) 0%, rgba(0,225,192,1) 25%, rgba(0,225,223,1) 50%, rgba(0,201,225,1) 75%, rgba(0,167,225,1) 100%);
+}
+
+#hello-message {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+#profile-portrait {
+  border-radius: 50%;
+  width: auto;
+  height: 100%;
+}
+
+#header-portrait {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
