@@ -215,9 +215,6 @@ table {
 
 .info-grid {
   display: grid;
-  /* Generates a grid with 6 columns and 7 rows */
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(7, 1fr);
   /* Sets up the template for fitting the "Profile:" info */
   grid-template-areas:
           "Name Name Position-l Position Position"
@@ -379,7 +376,7 @@ table {
 
 .web, .database, .general, .ide {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-} 
+}
 
 .web {
   background: rgb(0,255,255);
