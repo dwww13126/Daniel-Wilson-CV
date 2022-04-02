@@ -1,7 +1,5 @@
 # Daniel-Wilson-CV
 
-[https://dwww13126.github.io/Daniel-Wilson-CV/](https://dwww13126.github.io/Daniel-Wilson-CV/)
-
 A basic HTML webpage for presenting my CV information. It makes use of:
 
 ## CSS
@@ -16,3 +14,5 @@ A basic HTML webpage for presenting my CV information. It makes use of:
 * querySelector
 * setTimeout
 * onscroll
+
+You can view the live website here: [https://dwww13126.github.io/Daniel-Wilson-CV/](https://dwww13126.github.io/Daniel-Wilson-CV/)
