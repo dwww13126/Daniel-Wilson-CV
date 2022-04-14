@@ -5,8 +5,8 @@ let bioTextbox = document.getElementById("bio-textbox");
 let bioTextboxChildren = document.getElementById("bio-textbox").getElementsByTagName("p");
 let awardsTextbox = document.getElementById("awards-textbox");
 let awardsTextboxChildren = document.getElementById("awards-textbox").getElementsByTagName("p");
-let codingContainer = document.getElementById("coding-container");
-let codingContainerChildren = document.getElementById("coding-container").getElementsByTagName("div");
+let codingGrid = document.getElementById("coding-grid");
+let codingGridChildren = document.getElementById("coding-grid").getElementsByTagName("div");
 
 setTimeout(() => { transition() },100);
 
@@ -18,7 +18,7 @@ function transition() {
     //Iterates through each of the infoGrid's children
     for (let infoSec of infoGridChildren) {
         setTimeout(() => { infoSec.classList.add("fade-in");}, time);
-        //Increments time to space out the transitions 
+        //Increments time to space out the transitions
         time = time + 60;
     }
     time = 100;
@@ -35,8 +35,8 @@ function transition() {
         time = time + 60;
     }
     time = 100;
-    setTimeout(() => { codingContainer.classList.add("fade-in");}, time);
-    for (let coding of codingContainerChildren) {
+    setTimeout(() => { codingGrid.classList.add("fade-in");}, time);
+    for (let coding of codingGridChildren) {
         setTimeout(() => { coding.classList.add("fade-in");}, time);
         time = time + 100;
     }
@@ -63,7 +63,7 @@ window.onscroll = () => {
         //(How many pixels down the page)
         if (pageYOffset >= segmentTop) {
             //Assigns the ID of this segment to be the current closestSegment
-            closestSegment = segment.getAttribute("id"); 
+            closestSegment = segment.getAttribute("id");
         }
     });
 

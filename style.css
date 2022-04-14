@@ -97,9 +97,10 @@ table {
 .text-box {
   text-align: left;
   font-size: 22px;
-  min-width: 1024px;
   max-width: 1024px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
   animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
   -moz-animation: fadeIn 2s;
@@ -111,6 +112,8 @@ table {
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
   -moz-animation: fadeIn 2s;
@@ -218,7 +221,7 @@ table {
   /* Sets up the template for fitting the "Profile:" info */
   grid-template-areas:
           "Name Name Position-l Position Position"
-          "Photo Photo Seper1 Seper1 Seper1"
+          "Photo Photo Location-l Location Location"
           "Photo Photo Qual-l Qual1 Qual1"
           "Photo Photo Seper2 Qual2 Qual2"
           "Photo Photo Trav-l Trav1 Trav1"
@@ -226,20 +229,120 @@ table {
           "Phone-l Phone Seper4 Seper4 Seper4"
           "Github-l Github Reference-l Reference Reference"
           "Linkedin-l Linkedin Seper5 Seper5 Seper5";
-
-  grid-template-columns: 100px 265px 150px auto auto;
+  grid-template-columns: 100px 265px 165px auto auto;
   grid-template-rows: 40px 40px 20px 40px 20px 40px 40px 40px 60px;
   grid-gap: 10px;
   text-align: left;
   font-size: 20px;
   border-radius: 25px;
   width: 1024px;
-  min-width: 1024px;
   margin: 0px;
   padding: 0px;
-  background: rgb(255,127,80);
   background: linear-gradient(to right, #00b5c0 38%, #00d9dd 38%, #00d9dd 100%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.coding-grid {
+  display: grid;
+  grid-template-areas:
+          "Web Database General Ide";
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  width: 1024px;
+}
+
+@media (max-width: 1024px) {
+  .info-grid {
+    display: grid;
+    /* Sets up the template for fitting the "Profile:" info */
+    grid-template-areas:
+            "Name Name"
+            "Photo Photo"
+            "Photo Photo"
+            "Photo Photo"
+            "Email-l Email"
+            "Phone-l Phone"
+            "Github-l Github"
+            "Linkedin-l Linkedin"
+            "Position-l Position"
+            "Location-l Location"
+            "Qual-l Qual1"
+            "Seper1 Qual2"
+            "Trav-l Trav1"
+            "Seper2 Trav2"
+            "Reference-l Reference";
+    grid-template-columns: 150px 500px;
+    grid-template-rows: 40px auto auto auto auto auto auto auto auto 40px 20px 40px 20px auto;
+    grid-gap: 2px;
+    width: 650px;
+    background: linear-gradient(to right, #00b5c0 24%, #00d9dd 24%, #00d9dd 100%);
+  }
+
+  .coding-grid {
+    grid-template-areas:
+            "Web Database"
+            "General Ide";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    width: 650px;
+  }
+
+  .name-animation, .hello-animation {
+    display: none;
+  }
+
+}
+
+@media (max-width: 675px) {
+  .info-grid {
+    display: grid;
+    /* Sets up the template for fitting the "Profile:" info */
+    grid-template-areas:
+            "Name"
+            "Photo"
+            "Email-l"
+            "Email"
+            "Phone-l"
+            "Phone"
+            "Github-l"
+            "Github"
+            "Linkedin-l"
+            "Linkedin"
+            "Position-l"
+            "Position"
+            "Location-l"
+            "Location"
+            "Qual-l"
+            "Qual1"
+            "Qual2"
+            "Trav-l"
+            "Trav1"
+            "Trav2"
+            "Reference-l"
+            "Reference";
+    grid-template-columns: auto;
+    grid-template-rows: 40px auto 25px 40px 25px 40px 25px 40px 25px 40px 25px 40px 25px 40px 25px 25px 40px 25px 25px auto auto auto;
+    grid-gap: 0px;
+    width: 460px;
+    background: #00d9dd;
+  }
+
+  .coding-grid {
+    grid-template-areas:
+            "Web"
+            "Database"
+            "General"
+            "Ide";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    width: 300px;
+  }
+
+  .name-animation, .hello-animation {
+    display: none;
+  }
 }
 
 .info-grid > div {
@@ -341,6 +444,30 @@ table {
   grid-area: Reference;
 }
 
+.location-l {
+  grid-area: Location-l;
+}
+
+.location {
+  grid-area: Location;
+}
+
+.web {
+  grid-area: Web;
+}
+
+.database {
+  grid-area: Database;
+}
+
+.general {
+  grid-area: General;
+}
+
+.ide {
+  grid-area: Ide;
+}
+
 .medium-img {
   width: 100px;
   height: 100px;
@@ -406,8 +533,8 @@ table {
 
 #profile-portrait {
   border-radius: 50%;
-  width: auto;
-  height: 100%;
+  width: 133px;
+  height: 133px;
 }
 
 #header-portrait {
