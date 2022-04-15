@@ -44,17 +44,13 @@ table {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.header,
-.footer {
+.header {
   display: flex;
   align-items: center;
   left: 0;
   right: 0;
   padding: 8px;
   background: #3C91E6;
-}
-
-.header {
   font-family: 'Courier New', monospace;
   font-size: 26px;
   position: fixed;
@@ -64,12 +60,6 @@ table {
   top: 0;
   padding: 0 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.footer {
-  bottom: 0;
-  justify-content: center;
-  margin-top: 16px;
 }
 
 .navigation {
@@ -250,6 +240,7 @@ table {
   grid-template-rows: auto;
   grid-gap: 20px;
   width: 1024px;
+  font-size: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -287,12 +278,12 @@ table {
     grid-template-rows: auto auto;
     grid-gap: 20px;
     width: 650px;
+    font-size: 16px;
   }
 
   .name-animation, .hello-animation {
     display: none;
   }
-
 }
 
 @media (max-width: 675px) {
@@ -325,8 +316,10 @@ table {
     grid-template-columns: auto;
     grid-template-rows: 40px auto 25px 40px 25px 40px 25px 40px 25px 40px 25px 40px 25px 40px 25px 25px 40px 25px 25px auto auto auto;
     grid-gap: 0px;
-    width: 460px;
+    width: 380px;
+    min-width: 380px;
     background: #00d9dd;
+    font-size: 16px;
   }
 
   .coding-grid {
@@ -338,10 +331,101 @@ table {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     width: 300px;
+    font-size: 16px;
   }
 
   .name-animation, .hello-animation {
     display: none;
+  }
+
+  .site-nav {
+    font-size: 20px;
+  }
+
+  .text-box {
+    font-size: 16px;
+  }
+
+  .view-grades {
+    font-size: 12px;
+  }
+
+  .navigation > li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  table {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .info-grid {
+    display: grid;
+    /* Sets up the template for fitting the "Profile:" info */
+    grid-template-areas:
+            "Name"
+            "Photo"
+            "Email-l"
+            "Email"
+            "Phone-l"
+            "Phone"
+            "Github-l"
+            "Github"
+            "Linkedin-l"
+            "Linkedin"
+            "Position-l"
+            "Position"
+            "Location-l"
+            "Location"
+            "Qual-l"
+            "Qual1"
+            "Qual2"
+            "Trav-l"
+            "Trav1"
+            "Trav2"
+            "Reference-l"
+            "Reference";
+    grid-template-columns: auto;
+    grid-template-rows: 40px auto 25px 40px 25px 40px 25px 40px 25px 40px 25px 40px 25px 40px 25px 25px 40px 25px 25px auto auto auto;
+    grid-gap: 0px;
+    width: 300px;
+    min-width: 300px;
+    background: #00d9dd;
+    font-size: 12px;
+  }
+
+  .coding-grid {
+    grid-template-areas:
+            "Web"
+            "Database"
+            "General"
+            "Ide";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    width: 300px;
+    font-size: 12px;
+  }
+
+  .name-animation, .hello-animation, .portrait {
+    display: none;
+  }
+
+  .site-nav {
+    font-size: 16px;
+  }
+
+  .text-box {
+    font-size: 12px;
+  }
+
+  .view-grades {
+    font-size: 12px;
+  }
+
+  table {
+    font-size: 12px;
   }
 }
 
